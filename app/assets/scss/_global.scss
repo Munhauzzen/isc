@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Stanley";
+  src: url("../fonts/Stanley.otf") format("opentype");
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html,
+body {
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  // color: #fff;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p,
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+input,
+textarea {
+  outline: none;
+}
+body {
+  color: #000;
+  // font-family: "Stanley";
+  font-family: "Familjen Grotesk", sans-serif;
+  font-weight: 500;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.container-fluid {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.title {
+  font-weight: bold;
+  font-size: 75px;
+  color: #c3a25d;
+  line-height: 70px;
+  position: relative;
+}
+.btn {
+  font-size: 22px;
+  text-align: center;
+  padding: 17px 0 18px;
+  color: #ffffff;
+  border: 1px solid #c3a25d;
+  border-radius: 53px;
+  font-weight: bold;
+  transition: all 0.3s;
+  &:hover {
+    background-color: #c3a25d;
+    color: #fff;
+  }
+}
+
+.btn.active {
+  background-color: #c3a25d;
+  color: #fff;
+  &:hover {
+    color: #185442;
+    background-color: transparent;
+  }
+}
+
+.info {
+  font-size: 19px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.menu-btn {
+  display: none;
+  .menu-row {
+    width: 56px;
+    height: 3px;
+    background-color: #fff;
+  }
+  .menu-row + .menu-row {
+    margin-top: 19px;
+  }
+}
