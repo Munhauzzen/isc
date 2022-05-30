@@ -12,10 +12,11 @@
   display: none;
 }
 .header {
-  background-image: url(../images/main__bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   padding: 34px 0 255px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.01)), url(../images/main__bg.jpg);
+  background-size: cover;
   &-top {
     display: flex;
     justify-content: space-between;
@@ -44,6 +45,19 @@
   &-main {
     padding-top: 347px;
     text-align: center;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      bottom: -160px;
+      width: 32px;
+      height: 84px;
+      background-image: url(../images/sprite.svg);
+      background-position: 0 0;
+      z-index: 9;
+    }
     &__title {
       font-family: "Stanley";
       font-size: 110px;
@@ -59,19 +73,6 @@
       font-weight: bold;
       padding: 19px 0 23px;
       border: 2px solid #c3a25d;
-      position: relative;
-      &::before {
-        content: "";
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-        bottom: -160px;
-        width: 32px;
-        height: 84px;
-        background-image: url(../images/sprite.svg);
-        background-position: 0 0;
-        z-index: 9;
-      }
     }
   }
 }
@@ -222,7 +223,7 @@
 // start competition
 
 .competition {
-  background-image: url(../images/competition__bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/competition__bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -285,7 +286,7 @@
 // start awards
 
 .awards {
-  background-image: url(../images/awards__bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.25)), url(../images/awards__bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -517,7 +518,7 @@
 // start contact
 
 .contact {
-  background-image: url(../images/contact__bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../images/contact__bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
