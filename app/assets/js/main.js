@@ -2,6 +2,7 @@ const burgerMenu = document.querySelector('.menu-btn');
 const bodyMenu = document.querySelector('.header-menu');
 if (burgerMenu) {
   burgerMenu.addEventListener("click", function (e) {
+    document.body.classList.toggle('lock');
     burgerMenu.classList.toggle('active');
     bodyMenu.classList.toggle('active');
   });
@@ -38,7 +39,7 @@ window.onscroll = function showHeader() {
 
   var header = document.querySelector('.header-top')
 
-  if (window.pageYOffset > 200) {
+  if (window.pageYOffset > 150) {
     header.classList.add('header__fixed');
   } else {
     header.classList.remove('header__fixed');

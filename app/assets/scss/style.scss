@@ -11,12 +11,12 @@
 }
 .header {
   background-repeat: no-repeat;
-  padding: 34px 0 190px;
+  padding: 0px 0 190px;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.01)), url(../images/main__bg.jpg);
   background-size: cover;
   background-position: center;
   &-top {
-    position: fixed;
+    position: absolute;
     top: 0px;
     left: 0;
     width: 100%;
@@ -50,10 +50,9 @@
     width: 225px;
     font-weight: normal;
     font-size: 20px;
-    // margin-left: 10px;
   }
   &-main {
-    padding-top: 180px;
+    padding-top: 220px;
     text-align: center;
     position: relative;
     &::before {
@@ -86,7 +85,6 @@
     }
   }
 }
-
 
 // end header
 
