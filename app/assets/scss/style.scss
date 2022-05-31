@@ -14,7 +14,7 @@
 .header {
   background-repeat: no-repeat;
   background-position: center;
-  padding: 34px 0 255px;
+  padding: 34px 0 220px;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.01)), url(../images/main__bg.jpg);
   background-size: cover;
   &-top {
@@ -43,7 +43,7 @@
     font-size: 20px;
   }
   &-main {
-    padding-top: 347px;
+    padding-top: 210px;
     text-align: center;
     position: relative;
     &::before {
@@ -51,7 +51,7 @@
       position: absolute;
       left: 50%;
       transform: translate(-50%, 0);
-      bottom: -160px;
+      bottom: -145px;
       width: 32px;
       height: 84px;
       background-image: url(../images/sprite.svg);
@@ -565,6 +565,7 @@
     &__btn {
       max-width: 492px;
       width: 100%;
+      cursor: pointer;
     }
     &__btn.btn.active:hover {
       color: #fff;
@@ -724,6 +725,10 @@
     &__btn {
       width: 492px;
       margin-top: 62px;
+      cursor: pointer;
+    }
+    &__btn.btn.active:hover {
+      color: #fff;
     }
   }
 }
