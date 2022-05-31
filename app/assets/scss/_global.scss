@@ -6,6 +6,8 @@
 html {
   box-sizing: border-box;
   // height: 100%;
+  overflow-x: hidden;
+
 }
 *,
 *::before,
@@ -16,7 +18,6 @@ html,
 body {
   position: relative;
   height: 100%;
-  // overflow-x: hidden;
 }
 a {
   display: inline-block;
