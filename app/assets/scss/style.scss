@@ -1,11 +1,9 @@
 @import "global";
 
 // start header
-.header .container {
-  max-width: 1366px;
-}
+
 .header__link.login {
-  width: 115px;
+  width: 110px;
 }
 .header__link-wrapper,
 .header-contact-wrapper {
@@ -13,24 +11,35 @@
 }
 .header {
   background-repeat: no-repeat;
-  background-position: center;
-  padding: 34px 0 220px;
+  padding: 34px 0 190px;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.01)), url(../images/main__bg.jpg);
   background-size: cover;
+  background-position: center;
   &-top {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  &-top-container {
+    max-width: 1240px;
+    padding: 20px 20px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 70px;
   }
   &-menu {
     &__list {
-      font-size: 20px;
+      font-size: 17px;
       text-transform: uppercase;
     }
     &__item {
       display: inline-block;
       & + & {
-        margin-left: 30px;
+        margin-left: 23px;
       }
     }
     &__link {
@@ -41,9 +50,10 @@
     width: 225px;
     font-weight: normal;
     font-size: 20px;
+    // margin-left: 10px;
   }
   &-main {
-    padding-top: 210px;
+    padding-top: 180px;
     text-align: center;
     position: relative;
     &::before {
@@ -51,7 +61,7 @@
       position: absolute;
       left: 50%;
       transform: translate(-50%, 0);
-      bottom: -145px;
+      bottom: -130px;
       width: 32px;
       height: 84px;
       background-image: url(../images/sprite.svg);
@@ -60,22 +70,23 @@
     }
     &__title {
       font-family: "Stanley";
-      font-size: 110px;
-      line-height: 83px;
+      font-size: 75px;
+      line-height: 60px;
       color: #ffffff;
       font-weight: normal;
-      max-width: 530px;
+      max-width: 400px;
       margin: 0 auto 35px;
     }
     &__link {
-      font-size: 29px;
-      width: 389px;
+      font-size: 20px;
+      width: 316px;
       font-weight: bold;
-      padding: 19px 0 23px;
+      padding: 17px 0 21px;
       border: 2px solid #c3a25d;
     }
   }
 }
+
 
 // end header
 
